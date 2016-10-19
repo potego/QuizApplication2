@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_results"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    tools:context="com.example.admin.quizapplication.Results">
+
+    <TextView
+        style="@style/HeaderText"
+        android:text="Your Results"
+        android:layout_marginBottom="15dp"
+        android:textSize="26sp"
+        android:gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="End of quiz, you got: "
+        android:textColor="#FFFFFF"
+        android:textSize="26sp"
+        android:gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/results_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5"
+        android:textSize="190sp"
+        android:textColor="#ffffff"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="120dp" />
+
+    <TextView
+        android:id="@+id/message_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hey"
+        android:background="#4FC3F7"
+        android:textSize="20dp"
+        android:padding="5dp"
+        android:gravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/retest"
+        style="@style/Button"
+        android:onClick="takeAnotherQuiz"
+        android:text="Take Another Quiz"/>
+
+</LinearLayout>

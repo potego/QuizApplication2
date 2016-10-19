@@ -1,119 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView android:layout_height="wrap_content"
-    android:layout_width="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android">
-
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
+    android:id="@+id/activity_options"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#E1F1F1"
-    tools:context="com.example.admin.quizapplication.MainActivity">
-
-   <!-- <ImageView android:src="@drawable/pic1"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="fitXY"
-        android:id="@+id/imageView"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />-->
-
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    tools:context="com.example.admin.quizapplication.options">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Fast mind for High IQs"
-        android:textSize="32sp"
-        android:textColor="#01579B"
-        android:gravity="center_horizontal"
-        android:id="@+id/textureView"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="37dp" />
+        android:text="The World Of Nerds and Geeks"
+        android:layout_marginTop="25dp"
+        android:textSize="45dp"
+        android:textColor="#E3F2FD"
+        android:gravity="center_horizontal"/>
 
-    <LinearLayout
+    <Button
+        android:id="@+id/start"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="430dp">
+        android:background="#4FC3F7"
+        android:textSize="28dp"
+        android:padding="15dp"
+        android:layout_marginTop="310dp"
+        android:text="Explore Our Quiz"
+        android:onClick="startQuiz"
 
-        <Button
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:text="Take Quiz"
-            android:background="#01579B"
-            android:textColor="#ffffff"
-            android:textSize="15sp"
-            android:layout_margin="5dp"
-            android:layout_weight="1"
-            android:textAllCaps="false"
-            android:onClick="takeQuiz"
         />
-
-        <Button
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:layout_weight="1"
-            android:text="Quit Quiz"
-            android:layout_margin="5dp"
-            android:background="#01579B"
-            android:textColor="#ffffff"
-            android:textSize="15sp"
-            android:textAllCaps="false"
-        />
-</LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginTop="100dp"
-        android:layout_marginLeft="15dp"
-        android:padding="15dp">
-
-        <RadioGroup
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Movies"
-            android:textSize="35sp"
-            android:textColor="#01579B"
-            android:paddingLeft="20dp"
-            android:layout_marginLeft="25dp"
-            android:layout_marginBottom="15dp"/>
-
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Music"
-            android:textSize="35sp"
-            android:textColor="#01579B"
-            android:paddingLeft="20dp"
-            android:layout_marginLeft="25dp"
-            android:layout_marginBottom="15dp"/>
-
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Geeks"
-            android:textSize="35sp"
-            android:textColor="#01579B"
-            android:paddingLeft="20dp"
-            android:layout_marginLeft="25dp"
-            android:layout_marginBottom="15dp"/>
-
-        </RadioGroup>
 
 
     </LinearLayout>
-
-</RelativeLayout>
-</ScrollView>
